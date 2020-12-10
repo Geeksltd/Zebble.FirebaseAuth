@@ -1,0 +1,8 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="EnsureSharedImported" BeforeTargets="BeforeBuild" Condition="'$(Shared)' == ''">
+    <Error Condition="!Exists('..\Shared\Shared.projitems')" Text="This project references Shared that are missing on this computer." />
+  </Target>
+  <Target Name="BeforeBuild">
+    <Error Condition="!Exists('..\Shared\Shared.projitems')" Text="This project references Shared that are missing on this computer." />
+  </Target>
+</Project>
