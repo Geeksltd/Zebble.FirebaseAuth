@@ -1,4 +1,4 @@
-[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble/master/Shared/NuGet/Icon.png "Zebble"
+[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/NuGet/Icon.png "Zebble.FirebaseAuth"
 
 
 ## Zebble
@@ -8,7 +8,7 @@
 A Zebble plugin for signing with Firebase Auth.
 
 
-[![NuGet](https://img.shields.io/nuget/v/Zebble.svg?label=NuGet)](https://www.nuget.org/packages/Zebble/)
+[![NuGet](https://img.shields.io/nuget/v/Zebble.FirebaseAuth.svg?label=NuGet)](https://www.nuget.org/packages/Zebble.FirebaseAuth/)
 
 > With this plugin you can get information from the user of Firebase Auth like email in your Zebble application and it is available on all platforms.
 
@@ -16,7 +16,7 @@ A Zebble plugin for signing with Firebase Auth.
 
 
 ### Setup
-* Available on NuGet: [https://www.nuget.org/packages/Zebble/](https://www.nuget.org/packages/Zebble/)
+* Available on NuGet: [https://www.nuget.org/packages/Zebble.FirebaseAuth/](https://www.nuget.org/packages/Zebble.FirebaseAuth/)
 * Install in your platform client projects.
 * Available for iOS, Android and UWP.
 <br>
