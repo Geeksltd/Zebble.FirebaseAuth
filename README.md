@@ -1,4 +1,4 @@
-[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/NuGet/Icon.png "Zebble.FirebaseAuth"
+[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/icon.png "Zebble.FirebaseAuth"
 
 
 ## Zebble
