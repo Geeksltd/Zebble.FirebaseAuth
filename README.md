@@ -50,6 +50,7 @@ You need to set up a Google Firebase Auth app in your console. To create a new p
 </settings>
 ```
 
+
 ### API Usage
 After initializing the plugin, you can use the following APIs.
 
