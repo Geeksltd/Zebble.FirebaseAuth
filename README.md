@@ -39,6 +39,9 @@ class StartUp
 }
 ```
 
+#### How can I acquire my Firebase Auth key?
+You need to set up a Google Firebase Auth app in your console. To create a new project, open your [Firebase console](https://console.firebase.google.com/), click on Add project, enter a name, and then click on the Create Project button. After that, you've to add an Authentication app to your project. To do so, on the right side of the project's overview page, head to `Develop > Authentication > Get Started`. In this step, you can configure your app to use one or more of the available sign-in providers. Click on Email/Password, turn the Enable switch on, and click on the Save button. Finally, you have to copy your API token by heading to `Project settings > General > Web API Key` and then add it to your `Config.xml` file as follow:
+<Firebase.ApiToken value="<YOUR_API_TOKEN>" />
 
 ### API Usage
 After initializing the plugin, you can use the following APIs.
