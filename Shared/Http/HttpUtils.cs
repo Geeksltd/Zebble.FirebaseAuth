@@ -59,10 +59,10 @@
 
         static string CreateRequestUri(string path)
         {
-            if (!FirebaseAuth.ApiKey.HasValue())
-                throw new Exception($"{nameof(FirebaseAuth.ApiKey)} isn't specified.");
+            if (!FirebaseAuthImpl.ApiKey.HasValue())
+                throw new Exception($"{nameof(FirebaseAuthImpl.ApiKey)} isn't specified.");
 
-            return REQUEST_PATH.FormatWith(path, FirebaseAuth.ApiKey);
+            return REQUEST_PATH.FormatWith(path, FirebaseAuthImpl.ApiKey);
         }
     }
 }
