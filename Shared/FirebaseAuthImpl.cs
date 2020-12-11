@@ -9,7 +9,7 @@
     {
         internal static string ApiKey { get; private set; }
 
-        public static void Initialize(string apiKey)
+        public void Initialize(string apiKey)
         {
             ApiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
         }
