@@ -6,7 +6,7 @@
     <SharedGUID>f413d304-3b87-4db8-90d1-84694155eca5</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Zebble.Plugin</Import_RootNamespace>
+    <Import_RootNamespace>Zebble</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)DTO\FrebaseUser.cs" />
@@ -27,6 +27,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)DTO\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Responses\" />
   </ItemGroup>
 </Project>

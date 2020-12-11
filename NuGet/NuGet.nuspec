@@ -1,33 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>Zebble</id>
-    <version>1.0.0</version>
-    <title>Firebase Auth</title>
-    <projectUrl>https://github.com/Geeksltd/Zebble.FirebaseAuth</projectUrl>
-    <icon>https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/NuGet/Icon.png</icon>
-    <copyright>Copyright © 2020 Geeks Ltd - All rights reserved.</copyright>
-    <description>Firebase Auth for Zebble (Xamarin)</description>
-    <authors>Geeks Ltd</authors>
-    <owners>Geeks Ltd</owners>
-	  <dependencies>
-		<group targetFramework="MonoAndroid10">
-		  <dependency id="Zebble" version="4.5.405"></dependency>
-		</group>
-		<group targetFramework="Xamarin.iOS10">
-		  <dependency id="Zebble" version="4.5.405"></dependency>
-		</group>
-		<group targetFramework="UAP10">
-		  <dependency id="Zebble" version="4.5.405"></dependency>
-		</group>
-	  </dependencies>
+	<id>Zebble.FirebaseAuth</id>
+	<version>1.0.0</version>
+	<title>Firebase Auth</title>
+	<projectUrl>https://github.com/Geeksltd/Zebble.FirebaseAuth</projectUrl>
+	<icon>images\Icon.png</icon>
+	<copyright>Geeks Ltd 2020, All rights reserved.</copyright>
+	<description>Firebase Auth for Zebble (Xamarin)</description>
+	<authors>Geeks Ltd</authors>
+	<owners>Geeks Ltd</owners>
+	<dependencies>
+	  <group targetFramework="MonoAndroid10">
+		<dependency id="Zebble" version="4.5.405"></dependency>
+	  </group>
+	  <group targetFramework="Xamarin.iOS10">
+		<dependency id="Zebble" version="4.5.405"></dependency>
+	  </group>
+	  <group targetFramework="UAP10">
+		<dependency id="Zebble" version="4.5.405"></dependency>
+	  </group>
+	</dependencies>
   </metadata>
   <files>
-    <file src="..\lib\Zebble.iOS.*" target="lib\Xamarin.iOS10\" />
-    <file src="..\lib\Zebble.Android.*" target="lib\MonoAndroid10\" />
-    <file src="..\lib\bin\ARM\Release\Zebble.UWP.*" target="runtimes\win10-arm\lib\uap10.0" />
-    <file src="..\lib\bin\x64\Release\Zebble.UWP.*" target="runtimes\win10-x64\lib\uap10.0" />
-    <file src="..\lib\bin\x86\Release\Zebble.UWP.*" target="runtimes\win10-x86\lib\uap10.0" />
-    <file src="..\lib\bin\Release\Zebble.UWP.*" target="ref\uap10.0" />
+	<file src=".\Icon.png" target="images\" />
+    <file src="..\lib\Zebble.FirebaseAuth.iOS.*" target="lib\Xamarin.iOS10\" />
+    <file src="..\lib\Zebble.FirebaseAuth.Android.*" target="lib\MonoAndroid10\" />
+    <file src="..\lib\bin\ARM\Release\Zebble.FirebaseAuth.UWP.*" target="runtimes\win10-arm\lib\uap10" />
+    <file src="..\lib\bin\x64\Release\Zebble.FirebaseAuth.UWP.*" target="runtimes\win10-x64\lib\uap10" />
+    <file src="..\lib\bin\x86\Release\Zebble.FirebaseAuth.UWP.*" target="runtimes\win10-x86\lib\uap10" />
+    <file src="..\lib\bin\Release\Zebble.FirebaseAuth.UWP.*" target="ref\uap10" />
   </files>
 </package>
