@@ -222,3 +222,5 @@ node_modules/
 Zebble.exe
 Components/rivets-1.0.5.1.png
 Components/rivets-1.0.5.1.info
+
+push-to-nuget.bat
