@@ -34,7 +34,7 @@
     <PackageProjectUrl>https://nuget.org/packages/Zebble.FirebaseAuth/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Geeksltd/Zebble.FirebaseAuth/</RepositoryUrl>
     <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
-    <PackageIconUrl>https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/NuGet/Icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/icon.png</PackageIconUrl>
     <PackageTags>xamarin, windows, ios, android, zebble, firebase, auth</PackageTags>
     
     <Title>Zebble.FirebaseAuth</Title>
