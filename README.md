@@ -1,26 +1,23 @@
 [logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/icon.png "Zebble.FirebaseAuth"
 
-
 ## Zebble
 
 ![logo]
 
 A Zebble plugin for signing with Firebase Auth.
 
-
 [![NuGet](https://img.shields.io/nuget/v/Zebble.FirebaseAuth.svg?label=NuGet)](https://www.nuget.org/packages/Zebble.FirebaseAuth/)
 
 > With this plugin you can get information from the user of Firebase Auth like email in your Zebble application and it is available on all platforms.
 
-<br>
-
+<br />
 
 ### Setup
 * Available on NuGet: [https://www.nuget.org/packages/Zebble.FirebaseAuth/](https://www.nuget.org/packages/Zebble.FirebaseAuth/)
 * Install in your platform client projects.
 * Available for iOS, Android and UWP.
-<br>
 
+<br />
 
 ### Initialization
 First of all, you need to initialize this plugin by calling `FirebaseAuth.Current.Initialize` method. To do so, make a call to it on your project startup, and feed it by your Firebase Web API key. It's recommended to store the key in your Zebble's `\Resources\Config.xml` file.
@@ -50,6 +47,7 @@ You need to set up a Google Firebase Auth app in your console. To create a new p
 </settings>
 ```
 
+<br />
 
 ### API Usage
 After initializing the plugin, you can use the following APIs.
