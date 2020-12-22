@@ -1,5 +1,4 @@
-<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
-
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
   <PropertyGroup>
     <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
@@ -12,20 +11,16 @@
     <AssemblyName>Zebble.FirebaseAuth</AssemblyName>
     <RootNamespace>Zebble</RootNamespace>
     <PackageId>Zebble.FirebaseAuth</PackageId>
-    
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <Version>1.0.0.5</Version>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
     <DefineConstants>$(DefineConstants);</DefineConstants>
-    
     <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-
     <LangVersion>latest</LangVersion>
     <DebugType>portable</DebugType>
-    
     <!--TODO: Fill these in-->
     <!--<PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>-->
     <PackageProjectUrl>https://nuget.org/packages/Zebble.FirebaseAuth/</PackageProjectUrl>
@@ -33,20 +28,16 @@
     <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
     <PackageIconUrl>https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/icon.png</PackageIconUrl>
     <PackageTags>xamarin, windows, ios, android, zebble, firebase, auth</PackageTags>
-    
     <Title>Zebble.FirebaseAuth</Title>
     <Description>Firebase Auth for Zebble (Xamarin)</Description>
-    <PackageReleaseNotes>Minor fixes</PackageReleaseNotes>    
+    <PackageReleaseNotes>Minor fixes</PackageReleaseNotes>
     <Owners>Geeks Ltd</Owners>
     <Authors>Geeks Ltd</Authors>
     <Copyright>Geeks Ltd 2020, All rights reserved.</Copyright>
-
     <!--When built in 2019 will remove extra references on pack-->
     <DisableExtraReferences>true</DisableExtraReferences>
     <UserSecretsId>7da458f2-1a4b-46a4-afe2-ad93dacfb292</UserSecretsId>
-    
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
     <DebugSymbols>true</DebugSymbols>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
@@ -55,14 +46,10 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="Shared\**\*.cs" />
   </ItemGroup>
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
-  </ItemGroup>
-
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) "></ItemGroup>
   <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
     <Compile Include="\UWP\**\*.cs" />
     <!--
@@ -72,22 +59,18 @@
     </SDKReference>
     -->
   </ItemGroup>
-
   <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
     <Compile Include="\Android\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <Compile Include="\iOS\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Zebble">
-      <Version>4.5.405</Version>
+      <Version>4.5.418</Version>
     </PackageReference>
   </ItemGroup>
-
   <!--Additional item groups-->
   <!--
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.TVOS')) ">
@@ -118,8 +101,4 @@
     <Compile Include="**\*.dotnet.cs" />
   </ItemGroup>
   -->
-
-  <Target Name="EnsureOldDotNupkgPurged" AfterTargets="Clean">
-	<RemoveDir Directories="$(BaseOutputPath)" />
-  </Target>
 </Project>
