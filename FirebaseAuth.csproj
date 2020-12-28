@@ -1,13 +1,8 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
   <PropertyGroup>
-    <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netcoreapp3.1;Xamarin.iOS10;MonoAndroid90;uap10.0.18362</TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netcoreapp3.1;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
-    <!--Feel free to add as many targets as you need below
-    netstandard1.0;netstandard2.0;MonoAndroid90;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
-    For UWP update the version number with a version number you have installed.
-    -->
     <AssemblyName>Zebble.FirebaseAuth</AssemblyName>
     <RootNamespace>Zebble</RootNamespace>
     <PackageId>Zebble.FirebaseAuth</PackageId>
@@ -21,11 +16,9 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <LangVersion>latest</LangVersion>
     <DebugType>portable</DebugType>
-    <!--TODO: Fill these in-->
-    <!--<PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>-->
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/Zebble-LicenseAgreement.txt</PackageLicenseUrl>
     <PackageProjectUrl>https://nuget.org/packages/Zebble.FirebaseAuth/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Geeksltd/Zebble.FirebaseAuth/</RepositoryUrl>
-    <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
     <PackageIconUrl>https://raw.githubusercontent.com/Geeksltd/Zebble.FirebaseAuth/master/icon.png</PackageIconUrl>
     <PackageTags>xamarin, windows, ios, android, zebble, firebase, auth</PackageTags>
     <Title>Zebble.FirebaseAuth</Title>
@@ -34,7 +27,6 @@
     <Owners>Geeks Ltd</Owners>
     <Authors>Geeks Ltd</Authors>
     <Copyright>Geeks Ltd 2020, All rights reserved.</Copyright>
-    <!--When built in 2019 will remove extra references on pack-->
     <DisableExtraReferences>true</DisableExtraReferences>
     <UserSecretsId>7da458f2-1a4b-46a4-afe2-ad93dacfb292</UserSecretsId>
   </PropertyGroup>
@@ -49,15 +41,8 @@
   <ItemGroup>
     <Compile Include="Shared\**\*.cs" />
   </ItemGroup>
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) "></ItemGroup>
   <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
     <Compile Include="\UWP\**\*.cs" />
-    <!--
-    If you need to add sdk references:
-     <SDKReference Include="WindowsMobile, Version=10.0.16299.0">
-      <Name>Windows Mobile Extensions for the UWP</Name>
-    </SDKReference>
-    -->
   </ItemGroup>
   <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
     <Compile Include="\Android\**\*.cs" />
@@ -67,38 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Zebble">
-      <Version>4.5.418</Version>
-    </PackageReference>
+    <PackageReference Include="Zebble" Version="4.5.418" />
   </ItemGroup>
-  <!--Additional item groups-->
-  <!--
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.TVOS')) ">
-    <Compile Include="**\*.tvos.cs" />
-  </ItemGroup>
-
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.WatchOS')) ">
-    <Compile Include="**\*.watchos.cs" />
-  </ItemGroup>
-
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.Mac')) ">
-    <Compile Include="**\*.mac.cs" />
-  </ItemGroup>
-
-  
-   <ItemGroup Condition=" $(TargetFramework.StartsWith('netcoreapp')) ">
-    <Compile Include="**\*.netcore.cs" />
-  </ItemGroup>
-  
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Tizen')) ">
-    <Compile Include="**\*.tizen.cs" />
-    <PackageReference Include="Tizen.NET" Version="4.0.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('net45')) ">
-    <Compile Include="**\*.dotnet.cs" />
-  </ItemGroup>
-  -->
 </Project>
