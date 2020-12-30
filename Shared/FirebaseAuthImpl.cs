@@ -4,6 +4,7 @@
     using System.IO;
     using System.Threading.Tasks;
     using Zebble.Device;
+    using Olive;
 
     public class FirebaseAuthImpl : IFirebaseAuth
     {
