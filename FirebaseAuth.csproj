@@ -1,8 +1,8 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
   <PropertyGroup>
     <TargetFrameworks></TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">Xamarin.iOS10;MonoAndroid90;uap10.0.18362</TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netcoreapp3.1;Xamarin.iOS10;MonoAndroid90;uap10.0.18362</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netcoreapp3.1;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
     <AssemblyName>Zebble.FirebaseAuth</AssemblyName>
     <RootNamespace>Zebble</RootNamespace>
     <PackageId>Zebble.FirebaseAuth</PackageId>

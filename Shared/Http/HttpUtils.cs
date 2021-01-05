@@ -9,8 +9,8 @@
 
     static class HttpUtils
     {
-        const string IDENTITY_TOOLKIT_ADDRESS = "https://identitytoolkit.googleapis.com/";
-        const string SECURE_TOKEN_ADDRESS = "https://securetoken.googleapis.com/";
+        const string IDENTITY_TOOLKIT_ADDRESS = @"https://identitytoolkit.googleapis.com/";
+        const string SECURE_TOKEN_ADDRESS = @"https://securetoken.googleapis.com/";
         const string REQUEST_PATH = "/v1/{0}?key={1}";
 
         public static Task<T> IdentityToolkit<T>(string path, object request, Encoding encoding = null) where T : ResponseBase, new()
@@ -56,11 +56,11 @@
             };
         }
 
-        static HttpClient CreateClient(string baseAddress) => Network.HttpClient(baseAddress, TimeSpan.FromSeconds(30));
+        static HttpClient CreateClient(string baseAddress) => Network.HttpClient(baseAddress, 30.Seconds());
 
         static string CreateRequestUri(string path)
         {
-            if (!FirebaseAuthImpl.ApiKey.HasValue())
+            if (FirebaseAuthImpl.ApiKey.IsEmpty())
                 throw new Exception($"{nameof(FirebaseAuthImpl.ApiKey)} isn't specified.");
 
             return REQUEST_PATH.FormatWith(path, FirebaseAuthImpl.ApiKey);
