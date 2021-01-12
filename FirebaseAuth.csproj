@@ -7,7 +7,7 @@
     <RootNamespace>Zebble</RootNamespace>
     <PackageId>Zebble.FirebaseAuth</PackageId>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <Version>1.0.7.0</Version>
+    <Version>1.0.8.0</Version>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -60,7 +60,7 @@
     <Compile Include="iOS\**\*.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Zebble" Version="4.5.444" />
+    <PackageReference Include="Zebble" Version="4.5.445" />
   </ItemGroup>
   <ItemGroup>
     <None Remove=".gitignore" />
